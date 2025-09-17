@@ -130,7 +130,7 @@
 
   <!-- Header -->
   <header class="contact-header">
-    <h1>Hubungi Zetoro</h1>
+    <h1>Hubungi Kami</h1>
     <p class="lead mt-3">Kami selalu siap membantu kebutuhan teknologi Anda</p>
   </header>
 
@@ -334,7 +334,7 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 800,
+    duration: 200,
     once: true
   });
 </script>

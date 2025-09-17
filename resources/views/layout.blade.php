@@ -108,7 +108,7 @@
         <div class="row">
             {{-- Footer Column 1 --}}
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Zetoro Janaloka Teknologi</h2>
+                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Hubungi Kami</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><i class="fas fa-map-marker-alt fa-fw me-2"></i>Maspion Square Blok D-3(Ex Giant Margorejo) Jl. Ahmad Yani No 73 Surabaya</p></li>
                     <li><i class="fa fa-phone fa-fw me-2"></i> <a class="text-decoration-none text-light" href="tel:+62 822-4564-5353">+62 822-4564-5353</a></li>
@@ -128,7 +128,7 @@
 
             {{-- Footer Column 3 --}}
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Tentang Zetoro</h2>
+                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Tentang Kami</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none text-light" href="/">Beranda</a></li>
                     <li><a class="text-decoration-none text-light" href="/about">Tentang Kami</a></li>
@@ -169,8 +169,8 @@
     </a>
 
     {{-- Copyright --}}
-    <div class="bg-success text-white text-center py-3">
-        <p class="mb-0">&copy; 2025 Zetoro Janaloka Teknologi</p>
+    <div class="bg-success text-white text-center" style="padding: 2px 0;">
+        <p class="mb-0 small">&copy; 2025 Zetoro Janaloka Teknologi</p>
     </div>
 </footer>
 

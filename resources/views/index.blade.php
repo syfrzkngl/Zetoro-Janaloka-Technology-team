@@ -6,14 +6,13 @@
 <!-- Start Kategori Section -->
 <section id="kategori" class="bg-light">
   <div class="container py-5">
-    <!-<!-- Title Section -->
-<div class="row text-center py-5">
-  <div class="col-lg-6 m-auto">
-    <h1 class="display-4 fw-bold mb-3" style="color: #2c3e50;">Kategori Layanan</h1>
-    <hr class="mx-auto mb-4" style="width: 60px; border-top: 3px solid #28a745;">
-    <p class="lead text-muted">Pilih kategori sesuai kebutuhan Anda: IT, Jasa, dan Alat Tulis Kantor (ATK).</p>
-  </div>
-</div>
+    <!-- Title -->
+    <div class="row text-center py-3">
+      <div class="col-lg-6 m-auto">
+        <h1 class="h1">Kategori Layanan</h1>
+        <p>Pilih kategori sesuai kebutuhan Anda: IT, Jasa, dan Alat Tulis Kantor (ATK).</p>
+      </div>
+    </div>
 
 <div class="row equal-heigh">
 <!-- IT -->
@@ -61,9 +60,8 @@
         <span class="text-success fw-semibold">Alat Tulis Kantor</span>
       </div>
     </div>
-  </a>
-</div>
-
+  </div>
+</section>
 <!-- End Kategori Section -->
 
 </body>

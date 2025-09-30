@@ -110,9 +110,16 @@
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Hubungi Kami</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><i class="fas fa-map-marker-alt fa-fw me-2"></i>Maspion Square Blok D-3(Ex Giant Margorejo) Jl. Ahmad Yani No 73 Surabaya</p></li>
-                    <li><i class="fa fa-phone fa-fw me-2"></i> <a class="text-decoration-none text-light" href="tel:+62 822-4564-5353">+62 822-4564-5353</a></li>
-                    <li><i class="fa fa-envelope fa-fw me-2"></i> <a class="text-decoration-none text-light" href="mailto:info@company.com">zetoro@gmail.com</a></li>
+                    <li class="text-light">
+                        <i class="fas fa-map-marker-alt fa-fw me-2"></i>
+                        Maspion Square Blok D-3 (Ex Giant Margorejo) Jl. Ahmad Yani No 73 Surabaya</li>
+                    <li class="text-light">
+                        <i class="fa fa-phone fa-fw me-2"></i>
+                        <a class="text-decoration-none text-light" href="tel:+6282245645353">+62 822-4564-5353</a></li>
+                    <li class="text-light">
+                    <i class="fa fa-envelope fa-fw me-2"></i>
+                    <a class="text-decoration-none text-light" href="mailto:zetoro@gmail.com">zetoro@gmail.com</a>
+                    </li>
                 </ul>
             </div>
 

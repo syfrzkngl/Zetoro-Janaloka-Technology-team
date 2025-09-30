@@ -9,8 +9,8 @@
             <div class="col-md-8 text-white">
                 <h1>Tentang Kami</h1>
                 <p>
-                    Zetoro Janaloka Teknologi menyediakan solusi teknologi lengkap 
-                    - mulai dari pengadaan perangkat, penyewaan, perawatan, 
+                    Zetoro Janaloka Teknologi menyediakan solusi teknologi lengkap
+                    - mulai dari pengadaan perangkat, penyewaan, perawatan,
                     hingga sistem digital yang disesuaikan.
                 </p>
             </div>
@@ -117,9 +117,7 @@
                 </div>
             </div>
         </div>
-    </section>
-<<<<<<< HEAD
-    <!--End Brands-->
+    </section>    <!--End Brands-->
     <!-- CSS tambahan -->
 <style>
     .about-img {
@@ -148,8 +146,7 @@
     font-size: 28px;
   }
 </style>
-    @endsection
-=======
+
     <!-- End Why Us -->
 
 
@@ -171,8 +168,8 @@
 
     <!-- Custom CSS -->
     <style>
-  
+
     </style>
 
 @endsection
->>>>>>> fd6121c1e49a4f7b798bf592cd70d604f0a9e033
+

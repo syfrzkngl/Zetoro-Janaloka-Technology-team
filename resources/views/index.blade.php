@@ -19,7 +19,7 @@
 <div class="col-12 col-md-4 mb-4">
   <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi" class="text-decoration-none text-dark">
     <div class="card h-100 shadow-sm border-0">
-      <img src="assets/img/feature_prod_02.jpg" class="card-img-top" alt="IT">
+      <img src="assets/img/kategori_01.png" class="card-img-top" alt="IT">
       <div class="card-body text-center">
         <h4 class="fw-bold mb-2">IT</h4>
         <p class="card-text text-muted">
@@ -35,7 +35,7 @@
 <div class="col-12 col-md-4 mb-4">
   <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi" class="text-decoration-none text-dark">
     <div class="card h-100 shadow-sm border-0">
-      <img src="assets/img/feature_prod_01.jpg" class="card-img-top" alt="Jasa">
+      <img src="assets/img/kategori_02.png" class="card-img-top" alt="Jasa">
       <div class="card-body text-center">
         <h4 class="fw-bold mb-2">Jasa</h4>
         <p class="card-text text-muted">
@@ -51,7 +51,7 @@
 <div class="col-12 col-md-4 mb-4">
   <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi" class="text-decoration-none text-dark">
     <div class="card h-100 shadow-sm border-0">
-      <img src="assets/img/feature_prod_03.jpg" class="card-img-top" alt="ATK">
+      <img src="assets/img/kategori_03.png" class="card-img-top" alt="ATK">
       <div class="card-body text-center">
         <h4 class="fw-bold mb-2">ATK</h4>
         <p class="card-text text-muted">

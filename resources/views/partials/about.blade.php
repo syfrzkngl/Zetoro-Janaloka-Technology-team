@@ -28,13 +28,7 @@
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
                 <h1>Kenapa Kami?</h1>
-<<<<<<< HEAD
-                <p>
-                    Kami memberikan solusi TI terbaik dan terpercaya untuk kebutuhan bisnis Anda.
-                </p>
-=======
                 <p>Kami memberikan solusi TI terbaik dan terpercaya untuk kebutuhan bisnis Anda.</p>
->>>>>>> fd6121c1e49a4f7b798bf592cd70d604f0a9e033
             </div>
         </div>
 
@@ -118,40 +112,7 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-    <!--End Brands-->
-    <!-- CSS tambahan -->
-<style>
-    .about-img {
-  max-width: auto;
-  width: auto;
-  height: auto;
-  border-radius: auto;
-}
-.feature-box {
-    transition: all 0.3s ease;
-    border-radius: 15px;
-  }
-  .feature-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
-  }
-  .icon-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #198754;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 28px;
-  }
-</style>
-    @endsection
-=======
     <!-- End Why Us -->
-
 
 <div class="logo-slider">
   <div class="logo-slide-track">
@@ -175,4 +136,3 @@
     </style>
 
 @endsection
->>>>>>> fd6121c1e49a4f7b798bf592cd70d604f0a9e033

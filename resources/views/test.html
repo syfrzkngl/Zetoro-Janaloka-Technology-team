@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>test</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      padding: 40px 60px; /* padding atas-bawah 40px, kanan-kiri 60px */
+    }
+
+    .grid-item {
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      aspect-ratio: 1 / 1;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsive: Tablet (<= 992px) */
+    @media (max-width: 992px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 40px;
+      }
+    }
+
+    /* Responsive: HP (<= 576px) */
+    @media (max-width: 576px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- 24 gambar dengan animasi flip-down -->
+    <!-- Kamu bisa ganti URL gambarnya pakai gambar produkmu -->
+    <!-- Baris 1 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=1');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=2');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=3');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=4');" data-aos="flip-down" data-aos-delay="300"></div>
+
+    <!-- Baris 2 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=5');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=6');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=7');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=8');" data-aos="flip-down" data-aos-delay="300"></div>
+
+    <!-- Baris 3 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=9');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=10');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=11');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=12');" data-aos="flip-down" data-aos-delay="300"></div>
+
+    <!-- Baris 4 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=13');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=14');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=15');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=16');" data-aos="flip-down" data-aos-delay="300"></div>
+
+    <!-- Baris 5 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=17');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=18');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=19');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=20');" data-aos="flip-down" data-aos-delay="300"></div>
+
+    <!-- Baris 6 -->
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=21');" data-aos="flip-down"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=22');" data-aos="flip-down" data-aos-delay="100"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=23');" data-aos="flip-down" data-aos-delay="200"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/400?random=24');" data-aos="flip-down" data-aos-delay="300"></div>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" href="{{ asset('assets/img/apple-icon.png') }}">
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favico.png') }}">
 
   <!-- LOCAL CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -103,88 +103,70 @@
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-                {{-- Footer Column 1 --}}
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zetoro Janaloka Teknologi</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><i class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</li>
-                        <li><i class="fa fa-phone fa-fw"></i> <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a></li>
-                        <li><i class="fa fa-envelope fa-fw"></i> <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a></li>
-                    </ul>
-                </div>
-
-                {{-- Footer Column 2 --}}
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                    </ul>
-                </div>
-
-                {{-- Footer Column 3 --}}
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Beranda</a></li>
-                        <li><a class="text-decoration-none" href="#">Tentang Kami</a></li>
-                        <li><a class="text-decoration-none" href="#">Lokasi Toko</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none" href="#">Kontak</a></li>
-                    </ul>
-                </div>
+  <footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+        <div class="row">
+            {{-- Footer Column 1 --}}
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Zetoro Janaloka Teknologi</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><i class="fas fa-map-marker-alt fa-fw me-2"></i>Maspion Square Blok D-3(Ex Giant Margorejo) Jl. Ahmad Yani No 73 Surabaya</p></li>
+                    <li><i class="fa fa-phone fa-fw me-2"></i> <a class="text-decoration-none text-light" href="tel:+62 822-4564-5353">+62 822-4564-5353</a></li>
+                    <li><i class="fa fa-envelope fa-fw me-2"></i> <a class="text-decoration-none text-light" href="mailto:info@company.com">zetoro@gmail.com</a></li>
+                </ul>
             </div>
 
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-auto">
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
-                    </div>
-                </div>
+            {{-- Footer Column 2 --}}
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Layanan Kami</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none text-light" >IT</a></li>
+                    <li><a class="text-decoration-none text-light" >Jasa Perawatan</a></li>
+                    <li><a class="text-decoration-none text-light" >Alat Tulis Kantor (ATK)</a></li>
+                </ul>
+            </div>
+
+            {{-- Footer Column 3 --}}
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-success border-bottom border-2 border-white pb-3">Tentang Zetoro</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none text-light" href="/">Beranda</a></li>
+                    <li><a class="text-decoration-none text-light" href="/about">Tentang Kami</a></li>
+                    <li><a class="text-decoration-none text-light hover-success" target="_blank" href="https://maps.google.com/?q=Maspion+Square+Surabaya"">Lokasi Toko</a></li>
+                    <li><a class="text-decoration-none text-light" href="/faq">FAQ</a></li>
+                    <li><a class="text-decoration-none text-light" href="/contact">Kontak</a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light m-0">
-                            &copy; 2025 Zetoro Janaloka Teknologi
-                            | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
+        {{-- Baris Sosial Media & Newsletter --}}
+        <div class="row text-light mb-4 pt-4 align-items-center">
+            <div class="col-12 mb-3">
+                <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+                <ul class="list-inline text-left footer-icons mb-0">
+                    <li class="list-inline-item border border-light rounded-circle text-center p-1">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/">
+                            <i class="fab fa-instagram fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center p-1">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://katalog.inaproc.id/zetoro-janaloka-teknologi">
+                            <i class="fas fa-shopping-basket fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+
+    {{-- Copyright --}}
+    <div class="bg-success text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Zetoro Janaloka Teknologi</p>
+    </div>
+</footer>
+
     @stack('styles')
 @stack('scripts')
 

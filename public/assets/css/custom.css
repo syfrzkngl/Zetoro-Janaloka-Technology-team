@@ -1,3 +1,125 @@
 /*
 Custom Css
 */
+  /* bikin semua card dalam row tinggi sama */
+.logo-slider {
+  overflow: hidden;
+  background: #fff;
+  height: 280px; /* tinggi area slider */
+  display: flex;
+  align-items: center;
+}
+
+.logo-slide-track {
+  display: flex;
+  width: calc(400px * 10); /* (lebar logo * jumlah logo) */
+  animation: scroll 40s linear infinite; /* jalan terus tanpa berhenti */
+}
+
+.logo {
+  width: 300px;        /* kotak logo (lebih kecil biar rapat) */
+  margin: 0 15px;      /* jarak antar logo diperkecil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 220px;   /* biar logo tetap besar */
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* geser setengah track (karena ada duplikat) */
+}
+  /* bikin semua card dalam row tinggi sama */
+  .equal-height {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .equal-height > div {
+    display: flex;
+  }
+
+  .equal-height .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Bikin teks paragraf rata kiri-kanan */
+  .card-text {
+    text-align: justify;
+  }
+
+  /* Judul & span tetap rata tengah */
+  .card-body a,
+  .card-body span {
+    display: block;
+    text-align: center;
+  }
+
+    .footer {
+    background-color: #4B2E83; /* ungu */
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 9999;
+  }
+  .scroll-to-top:hover {
+    background-color: #ff85c1;
+    transform: translateY(-3px);
+  }
+
+/* Styling lingkaran icon */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dbdbdb;   /* default abu-abu muda */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efek hover jadi ungu */
+.icon-circle:hover {
+  background: #12b05c;   /* ungu */
+  color: #fff;           /* icon jadi putih */
+  transform: scale(1.1);
+}
+
+/* Efek klik jadi ungu lebih gelap */
+.icon-circle:active {
+  background: #dee2df;   /* ungu lebih gelap */
+  transform: scale(0.95);
+}
+
+/* Styling banner about */
+.about-banner {
+  background: linear-gradient(135deg, #008700, #ffffff);
+  /* #006400 = hijau tua, #32cd32 = hijau muda */
+  color: white;
+}
+

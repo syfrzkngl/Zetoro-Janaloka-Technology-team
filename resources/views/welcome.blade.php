@@ -9,6 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -22,89 +23,186 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
 
-        .glass-card {
-            background: rgba(255, 255, 255, .55);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
-        .dark .glass-card {
-            background: rgba(15, 15, 15, .75);
-        }
 
-        @keyframes marquee {
-            from {
-                transform: translateX(0);
-            }
+/* GLASS */
 
-            to {
-                transform: translateX(-50%);
-            }
-        }
+.glass-card {
+    background: rgba(255, 255, 255, .55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
 
-        .animate-marquee {
-            display: flex;
-            width: max-content;
-            animation: marquee 40s linear infinite;
-        }
+.dark .glass-card {
+    background: rgba(15, 15, 15, .75);
+}
 
-        .animate-marquee:hover {
-            animation-play-state: paused;
-        }
 
-        .hero-glow {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 9999px;
-            filter: blur(100px);
-            opacity: .15;
-        }
+/* MARQUEE */
 
-        .hero-card:hover {
-            transform: translateY(-5px);
-        }
+@keyframes marquee {
 
-        .hero-card {
-            transition: .3s ease;
-        }
+    from {
+        transform: translateX(0);
+    }
 
-        @media (max-width:1024px) {
-            .hero-title {
-                font-size: 3rem !important;
-            }
-        }
+    to {
+        transform: translateX(-50%);
+    }
 
-        @media (max-width:768px) {
-            .hero-title {
-                font-size: 2.2rem !important;
-                line-height: 1.15;
-            }
+}
 
-            .hero-subtitle {
-                font-size: .95rem;
-            }
-        }
+.animate-marquee {
 
-        @media (max-width:640px) {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
 
-            nav.desktop-nav {
-                display: none;
-            }
+}
 
-            .hero-title {
-                font-size: 1.9rem !important;
-            }
+.animate-marquee:hover {
 
-            .stat-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    animation-play-state: paused;
+
+}
+
+
+/* HERO */
+
+.hero-glow {
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 9999px;
+    filter: blur(100px);
+    opacity: .15;
+
+}
+
+
+.hero-card {
+
+    transition: .3s ease;
+
+}
+
+
+.hero-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/* Desktop kecil / Tablet */
+
+@media (max-width:1024px) {
+
+
+    .hero-title {
+
+        font-size: 3rem;
+        line-height: 1.1;
+
+    }
+
+
+}
+
+
+/* Tablet */
+
+@media (max-width:768px) {
+
+
+    .hero-title {
+
+        font-size: 2.25rem;
+        line-height: 1.15;
+
+    }
+
+
+    .hero-subtitle {
+
+        font-size: .95rem;
+
+    }
+
+
+}
+
+
+/* Mobile */
+
+@media (max-width:640px) {
+
+
+    nav.desktop-nav {
+
+        display:none;
+
+    }
+
+
+    .hero-title {
+
+        font-size:1.9rem;
+        line-height:1.2;
+
+    }
+
+
+    .hero-subtitle {
+
+        font-size:.9rem;
+
+    }
+
+
+    .stat-grid {
+
+        grid-template-columns:repeat(2,1fr);
+        gap:.75rem;
+
+    }
+
+
+}
+
+
+/* Extra kecil */
+
+@media (max-width:375px) {
+
+
+    .hero-title {
+
+        font-size:1.7rem;
+
+    }
+
+
+    .stat-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+</style>
 </head>
 
 <body
@@ -186,26 +284,17 @@
 
                     </a>
 
-                    <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi"
-                        target="_blank"
-                        class="text-neutral-500 hover:text-emerald-600 transition-all px-4 py-2">
-
-                        <i class="bi bi-shop-window mr-1"></i>
-                        Toko
-
-                    </a>
-
                 </nav>
 
                 <!-- RIGHT -->
 
                 <div class="flex items-center gap-3">
 
-                    <a href="#contact"
+                    <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi"
                         class="hidden sm:flex items-center gap-2 bg-neutral-900 dark:bg-white dark:text-black text-white px-5 py-2 rounded-full text-sm font-bold hover:scale-105 transition">
 
                         <i class="bi bi-rocket-takeoff-fill"></i>
-                        Mulai
+                        Lihat Toko
 
                     </a>
 
@@ -803,124 +892,153 @@
 
         <!-- CLIENTS -->
 
-        <section
-            class="py-12 overflow-hidden bg-white dark:bg-[#111] border-y border-neutral-200 dark:border-neutral-800">
+<section
+    class="py-12 overflow-hidden bg-white dark:bg-[#111] border-y border-neutral-200 dark:border-neutral-800">
 
-            <div class="text-center mb-10">
 
-                <h2
-                    class="text-3xl font-black">
+    <div class="text-center mb-10">
 
-                    Dipercaya Berbagai Instansi
 
-                </h2>
+        <h2 class="text-3xl font-black">
 
-                <p
-                    class="text-neutral-500 mt-2">
+            Dipercaya Berbagai Instansi
 
-                    Beberapa klien yang telah bekerja sama dengan kami
+        </h2>
 
-                </p>
 
-            </div>
+        <p class="text-neutral-500 mt-2">
 
-            <div
-                class="animate-marquee gap-6">
+            Beberapa klien yang telah bekerja sama dengan kami
 
-                @for ($i = 1; $i <= 22; $i++)
+        </p>
 
-                    <div
-                        class="h-24 w-52 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-3xl flex items-center justify-center shrink-0 p-5 hover:scale-105 transition-all">
 
-                        <img
-                            src="{{ asset('assets/img/clients/client-' . $i . '.png') }}"
-                            alt="Client {{ $i }}"
-                            class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all">
+    </div>
 
-                    </div>
 
-                @endfor
 
-                @for ($i = 1; $i <= 22; $i++)
+    <div class="animate-marquee gap-6">
 
-                    <div
-                        class="h-24 w-52 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-3xl flex items-center justify-center shrink-0 p-5 hover:scale-105 transition-all">
 
-                        <img
-                            src="{{ asset('assets/img/clients/client-' . $i . '.png') }}"
-                            alt="Client {{ $i }}"
-                            class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all">
+        @for ($i = 1; $i <= 22; $i++)
 
-                    </div>
-
-                @endfor
-
-            </div>
-
-        </section>
-
-        <!-- CTA -->
-
-        <section
-            class="max-w-7xl mx-auto px-4 sm:px-6">
 
             <div
-                class="bg-gradient-to-r from-[#198754] to-emerald-600 rounded-[40px] p-8 md:p-14 text-center text-white">
 
-                <div
-                    class="max-w-3xl mx-auto">
+                class="
+                h-32
+                w-64
+                bg-neutral-50
+                dark:bg-neutral-900
+                border
+                border-neutral-200
+                dark:border-neutral-800
+                rounded-3xl
+                flex
+                items-center
+                justify-center
+                shrink-0
+                p-4
+                hover:scale-105
+                transition-all
+                duration-300
+                "
 
-                    <h2
-                        class="text-3xl md:text-5xl font-black">
+            >
 
-                        Siap Memulai Transformasi Digital?
 
-                    </h2>
+                <img
 
-                    <p
-                        class="mt-5 text-emerald-100 leading-relaxed">
+                    src="{{ asset('assets/img/clients/client-' . $i . '.png') }}"
 
-                        Diskusikan kebutuhan pengadaan,
-                        pengembangan sistem, atau solusi
-                        teknologi perusahaan Anda bersama
-                        tim Zetoro Janaloka Teknologi.
+                    alt="Client {{ $i }}"
 
-                    </p>
+                    class="
+                    h-24
+                    w-auto
+                    object-contain
+                    grayscale
+                    hover:grayscale-0
+                    transition-all
+                    duration-300
+                    "
 
-                    <div
-                        class="flex flex-wrap justify-center gap-4 mt-8">
+                >
 
-                        <a
-                            href="#contact"
-                            class="bg-white text-[#198754] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all">
-
-                            <i class="bi bi-chat-dots-fill mr-2"></i>
-                            Hubungi Kami
-
-                        </a>
-
-                        <a
-                            href="https://katalog.inaproc.id/zetoro-janaloka-teknologi"
-                            target="_blank"
-                            class="border border-white/30 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all">
-
-                            <i class="bi bi-shop-window mr-2"></i>
-                            Lihat Katalog
-
-                        </a>
-
-                    </div>
-
-                </div>
 
             </div>
 
-        </section>
+
+        @endfor
+
+
+
+
+        {{-- DUPLIKAT UNTUK LOOP INFINITE --}}
+
+
+        @for ($i = 1; $i <= 22; $i++)
+
+
+            <div
+
+                class="
+                h-32
+                w-64
+                bg-neutral-50
+                dark:bg-neutral-900
+                border
+                border-neutral-200
+                dark:border-neutral-800
+                rounded-3xl
+                flex
+                items-center
+                justify-center
+                shrink-0
+                p-4
+                hover:scale-105
+                transition-all
+                duration-300
+                "
+
+            >
+
+
+                <img
+
+                    src="{{ asset('assets/img/clients/client-' . $i . '.png') }}"
+
+                    alt="Client {{ $i }}"
+
+                    class="
+                    h-24
+                    w-auto
+                    object-contain
+                    grayscale
+                    hover:grayscale-0
+                    transition-all
+                    duration-300
+                    "
+
+                >
+
+
+            </div>
+
+
+        @endfor
+
+
+
+    </div>
+
+
+</section>
         <!-- FAQ -->
 
         <section id="faq"
             class="max-w-4xl mx-auto px-4 sm:px-6"
-            x-data="{ activeFaq: 1 }">
+    x-data="{ activeFaq: null }">
 
             <div class="text-center mb-12">
 
@@ -1080,136 +1198,200 @@
         <!-- CONTACT -->
 
         <section id="contact"
-            class="max-w-7xl mx-auto px-4 sm:px-6">
+    class="max-w-6xl mx-auto px-4 sm:px-6">
 
-            <div
-                class="grid lg:grid-cols-12 gap-6">
 
-                <!-- LEFT -->
+    <div class="grid lg:grid-cols-12 gap-5">
 
-                <div
-                    class="lg:col-span-5 bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[40px] p-8">
 
-                    <span
-                        class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-600 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-widest">
+        <!-- LEFT -->
 
-                        <i class="bi bi-envelope-paper-fill"></i>
-                        Hubungi Kami
+        <div
+            class="lg:col-span-5 bg-white dark:bg-[#111]
+            border border-neutral-200 dark:border-neutral-800
+            rounded-[32px]
+            p-6">
 
-                    </span>
 
-                    <h2
-                        class="text-3xl font-black mt-6">
+            <span
+                class="inline-flex items-center gap-2
+                bg-emerald-500/10
+                text-emerald-600
+                px-3 py-2
+                rounded-full
+                text-xs
+                font-extrabold
+                uppercase">
 
-                        Mari Diskusikan Kebutuhan Anda
+                <i class="bi bi-envelope-paper-fill"></i>
 
-                    </h2>
+                Hubungi Kami
 
-                    <p
-                        class="text-neutral-500 mt-4 leading-relaxed">
+            </span>
 
-                        Tim kami siap membantu kebutuhan
-                        pengadaan, pengembangan sistem,
-                        maintenance, dan transformasi digital.
 
-                    </p>
+            <h2
+                class="text-2xl font-black mt-5">
 
-                    <div
-                        class="mt-8 space-y-4">
+                Mari Diskusikan Kebutuhan Anda
 
-                        <a
-                            href="https://wa.me/6282245645353"
-                            target="_blank"
-                            class="flex items-center gap-4 bg-[#198754] text-white p-5 rounded-2xl hover:scale-[1.02] transition-all">
+            </h2>
 
-                            <i
-                                class="bi bi-whatsapp text-2xl"></i>
 
-                            <div>
+            <p
+                class="text-neutral-500 mt-3 text-sm leading-relaxed">
 
-                                <div class="font-black">
-                                    WhatsApp
-                                </div>
+                Tim kami siap membantu kebutuhan pengadaan,
+                pengembangan sistem, maintenance,
+                dan transformasi digital.
 
-                                <div
-                                    class="text-sm text-emerald-100">
+            </p>
 
-                                    +62 822-4564-5353
 
-                                </div>
 
-                            </div>
+            <div class="mt-6 space-y-3">
 
-                        </a>
 
-                        <a
-                            href="mailto:zetorojanaloka@gmail.com"
-                            class="flex items-center gap-4 bg-neutral-100 dark:bg-neutral-900 p-5 rounded-2xl hover:scale-[1.02] transition-all">
+                <a
+                    href="https://wa.me/6282245645353"
+                    target="_blank"
+                    class="
+                    flex items-center gap-4
+                    bg-neutral-100
+                    dark:bg-neutral-900
+                    p-4
+                    rounded-2xl
+                    hover:scale-[1.02]
+                    transition">
 
-                            <i
-                                class="bi bi-envelope-fill text-2xl text-emerald-500"></i>
 
-                            <div>
+                    <i class="bi bi-whatsapp text-xl text-emerald-500"></i>
 
-                                <div class="font-black">
-                                    Email
-                                </div>
 
-                                <div
-                                    class="text-sm text-neutral-500">
+                    <div>
 
-                                    zetorojanaloka@gmail.com
-
-                                </div>
-
-                            </div>
-
-                        </a>
-
-                        <div
-                            class="flex items-center gap-4 bg-neutral-100 dark:bg-neutral-900 p-5 rounded-2xl">
-
-                            <i
-                                class="bi bi-geo-alt-fill text-2xl text-emerald-500"></i>
-
-                            <div>
-
-                                <div class="font-black">
-                                    Lokasi
-                                </div>
-
-                                <div
-                                    class="text-sm text-neutral-500">
-
-                                    Maspion Square, Surabaya
-
-                                </div>
-
-                            </div>
-
+                        <div class="font-black text-sm">
+                            WhatsApp
                         </div>
+
+
+                        <div class="text-xs text-neutral-500">
+                            Ketuk untuk memulai
+                        </div>
+
 
                     </div>
 
-                </div>
 
-                <!-- MAP -->
+                </a>
 
-                <div
-                    class="lg:col-span-7 rounded-[40px] overflow-hidden border border-neutral-200 dark:border-neutral-800 min-h-[500px]">
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6004527544063!2d112.74374087499384!3d-7.289360592725091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb198e87f1df%3A0x32d61a2f97521bb5!2sMaspion%20Square!5e0!3m2!1sid!2sid!4v1735341062334!5m2!1sid!2sid"
-                        class="w-full h-full"
-                        loading="lazy">
-                    </iframe>
 
-                </div>
+                <a
+                    href="mailto:zetorojanaloka@gmail.com"
+                    class="
+                    flex items-center gap-4
+                    bg-neutral-100
+                    dark:bg-neutral-900
+                    p-4
+                    rounded-2xl
+                    hover:scale-[1.02]
+                    transition">
+
+
+                    <i class="bi bi-envelope-fill text-xl text-emerald-500"></i>
+
+
+                    <div>
+
+                        <div class="font-black text-sm">
+                            Email
+                        </div>
+
+
+                        <div class="text-xs text-neutral-500">
+                            Ketuk untuk memulai
+                        </div>
+
+
+                    </div>
+
+
+                </a>
+
+
+
+
+                <a
+                    href="https://instagram.com/zetoro.janaloka"
+                    target="_blank"
+                    class="
+                    flex items-center gap-4
+                    bg-neutral-100
+                    dark:bg-neutral-900
+                    p-4
+                    rounded-2xl
+                    hover:scale-[1.02]
+                    transition">
+
+
+                    <i class="bi bi-instagram text-xl text-emerald-500"></i>
+
+
+                    <div>
+
+                        <div class="font-black text-sm">
+                            Instagram
+                        </div>
+
+
+                        <div class="text-xs text-neutral-500">
+                            Ketuk untuk memulai
+                        </div>
+
+
+                    </div>
+
+
+                </a>
+
 
             </div>
 
-        </section>
 
+        </div>
+
+
+
+
+        <!-- MAP -->
+
+        <div
+            class="lg:col-span-7
+            rounded-[32px]
+            overflow-hidden
+            border border-neutral-200 dark:border-neutral-800
+            min-h-[380px]">
+
+
+            <iframe
+
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6004527544063!2d112.74374087499384!3d-7.289360592725091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb198e87f1df%3A0x32d61a2f97521bb5!2sMaspion%20Square!5e0!3m2!1sid!2sid!4v1735341062334!5m2!1sid!2sid"
+
+                class="w-full h-full"
+
+                loading="lazy">
+
+            </iframe>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
     </main>
 
     <!-- FOOTER -->
@@ -1352,36 +1534,38 @@
 
     <script>
 
-        document.addEventListener('scroll', () => {
+document.addEventListener('scroll', () => {
 
-            const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('section[id]');
 
-            sections.forEach(section => {
+    sections.forEach(section => {
 
-                const top = window.scrollY;
-                const offset = section.offsetTop - 150;
-                const height = section.offsetHeight;
-                const id = section.getAttribute('id');
+        const scrollPosition = window.scrollY;
+        const sectionTop = section.offsetTop - 200;
+        const sectionHeight = section.offsetHeight;
 
-                if (
-                    top >= offset &&
-                    top < offset + height
-                ) {
+        const id = section.getAttribute('id');
 
-                    const root =
-                        document.querySelector('body').__x;
 
-                    if (root) {
-                        root.$data.activeSection = id;
-                    }
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+        ) {
 
-                }
 
-            });
+            Alpine.$data(
+                document.querySelector('[x-data]')
+            ).activeSection = id;
 
-        });
 
-    </script>
+        }
+
+    });
+
+});
+
+
+</script>
 
 </body>
 

@@ -1,19 +1,19 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
+
+// Rute Tunggal untuk Pure Index Home (welcome.blade.php)
 Route::get('/', function () {
-    return view('index');
-});
+    return view('welcome');
+})->name('home');
 
-Route::get('/about', function () {
-    return view('partials.about');
-});
-
-Route::get('/contact', function () {
-    return view('partials.contact');
-});
-
-
-Route::get('/faq', function () {
-    return view('partials.faq');
-});
+// Otomatis memuat rute auth bawaan jika file auth.php tersedia
+if (file_exists(__DIR__.'/auth.php')) {
+    require __DIR__.'/auth.php';
+}

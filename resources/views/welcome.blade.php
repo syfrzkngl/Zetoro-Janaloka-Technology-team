@@ -429,7 +429,6 @@
             </div>
 
         </section>
-```blade
         <!-- SERVICES -->
 
         <section id="services"

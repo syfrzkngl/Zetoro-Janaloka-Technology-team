@@ -45,13 +45,13 @@ Pastikan perangkat Anda sudah memiliki:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/syfrzkngl/Zetoro-Janaloka-Teknologi.git
+git clone https://github.com/syfrzkngl/Zetoro-Janaloka-Technology-team.git
 ```
 
 ### 2. Masuk ke Folder Project
 
 ```bash
-cd Zetoro-Janaloka-Teknologi.git
+cd Zetoro-Janaloka-Technology-team.git
 ```
 
 ### 3. Install Dependency

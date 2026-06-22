@@ -177,6 +177,20 @@ body {
 
     }
 
+    /* PERBAIKAN: Mencegah konten Hero mepet ke atas ketutup navbar sticky */
+    #about {
+        padding-top: 2.5rem !important;
+    }
+
+    /* PERBAIKAN: Berikan jarak nafas ekstra antar section di mobile agar tidak rapat */
+    main.space-y-16 {
+        gap: 3rem !important;
+    }
+    
+    /* PERBAIKAN: Mengatur ulang padding dalam kartu hijau agar seimbang di layar kecil */
+    .lg\:col-span-7 {
+        padding: 2rem 1.5rem !important;
+    }
 
 }
 
@@ -212,16 +226,12 @@ body {
     }"
     class="bg-[#f4f5f6] dark:bg-[#090909] text-[#1b1b1b] dark:text-[#f2f2f2] min-h-screen overflow-x-hidden antialiased">
 
-    <!-- HEADER -->
-
     <header class="sticky top-4 z-50 px-4 pt-4">
 
         <div
             class="max-w-7xl mx-auto glass-card border border-white/30 dark:border-neutral-800 rounded-full h-16 px-4 shadow-2xl">
 
             <div class="h-full flex items-center justify-between">
-
-                <!-- LOGO -->
 
                 <a href="#about"
                     class="flex items-center gap-3">
@@ -231,8 +241,6 @@ body {
                         class="h-6 w-auto">
 
                 </a>
-
-                <!-- DESKTOP NAV -->
 
                 <nav class="desktop-nav flex items-center gap-3 text-sm font-bold">
 
@@ -286,8 +294,6 @@ body {
 
                 </nav>
 
-                <!-- RIGHT -->
-
                 <div class="flex items-center gap-3">
 
                     <a href="https://katalog.inaproc.id/zetoro-janaloka-teknologi"
@@ -311,8 +317,6 @@ body {
             </div>
 
         </div>
-
-        <!-- MOBILE MENU -->
 
         <div
             x-show="mobileMenu"
@@ -359,18 +363,12 @@ body {
 
     </header>
 
-    <!-- MAIN -->
-
     <main class="space-y-16">
-
-        <!-- HERO -->
 
         <section id="about"
             class="max-w-7xl mx-auto px-4 sm:px-6 pt-8">
 
             <div class="grid lg:grid-cols-12 gap-6">
-
-                <!-- LEFT -->
 
                 <div
                     class="lg:col-span-7 relative overflow-hidden rounded-[40px] bg-[#198754] text-white p-8 sm:p-12 shadow-2xl">
@@ -432,8 +430,6 @@ body {
 
                 </div>
 
-                <!-- RIGHT -->
-
                 <div
                     class="lg:col-span-5 bg-white dark:bg-[#101010] border border-neutral-200 dark:border-neutral-800 rounded-[40px] p-6 flex items-center justify-center">
 
@@ -447,8 +443,6 @@ body {
             </div>
 
         </section>
-
-        <!-- STATS -->
 
         <section class="max-w-7xl mx-auto px-4 sm:px-6">
 
@@ -518,8 +512,6 @@ body {
             </div>
 
         </section>
-        <!-- SERVICES -->
-
         <section id="services"
             class="max-w-7xl mx-auto px-4 sm:px-6">
 
@@ -553,8 +545,6 @@ body {
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- CARD 1 -->
-
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
 
@@ -583,8 +573,6 @@ body {
                     </p>
 
                 </div>
-
-                <!-- CARD 2 -->
 
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
@@ -615,8 +603,6 @@ body {
 
                 </div>
 
-                <!-- CARD 3 -->
-
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
 
@@ -645,8 +631,6 @@ body {
                     </p>
 
                 </div>
-
-                <!-- CARD 4 -->
 
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
@@ -677,8 +661,6 @@ body {
 
                 </div>
 
-                <!-- CARD 5 -->
-
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
 
@@ -707,8 +689,6 @@ body {
                     </p>
 
                 </div>
-
-                <!-- CARD 6 -->
 
                 <div
                     class="group bg-white dark:bg-[#111] border border-neutral-200 dark:border-neutral-800 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300">
@@ -742,8 +722,6 @@ body {
             </div>
 
         </section>
-
-        <!-- WHY US -->
 
         <section
             class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -890,9 +868,7 @@ body {
 
         </section>
 
-        <!-- CLIENTS -->
-
-<section
+        <section
     class="py-12 overflow-hidden bg-white dark:bg-[#111] border-y border-neutral-200 dark:border-neutral-800">
 
 
@@ -1034,8 +1010,6 @@ body {
 
 
 </section>
-        <!-- FAQ -->
-
         <section id="faq"
             class="max-w-4xl mx-auto px-4 sm:px-6"
     x-data="{ activeFaq: null }">
@@ -1060,7 +1034,7 @@ body {
                 <p
                     class="text-neutral-500 mt-4">
 
-                    Beberapa pertanyaan yang sering ditanyakan oleh klien kami.
+                    Several questions commonly asked by our clients.
 
                 </p>
 
@@ -1195,16 +1169,12 @@ body {
 
         </section>
 
-        <!-- CONTACT -->
-
         <section id="contact"
     class="max-w-6xl mx-auto px-4 sm:px-6">
 
 
     <div class="grid lg:grid-cols-12 gap-5">
 
-
-        <!-- LEFT -->
 
         <div
             class="lg:col-span-5 bg-white dark:bg-[#111]
@@ -1364,8 +1334,6 @@ body {
 
 
 
-        <!-- MAP -->
-
         <div
             class="lg:col-span-7
             rounded-[32px]
@@ -1394,8 +1362,6 @@ body {
 </section>
     </main>
 
-    <!-- FOOTER -->
-
     <footer
         class="mt-20 bg-neutral-950 text-white">
 
@@ -1404,8 +1370,6 @@ body {
 
             <div
                 class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-
-                <!-- BRAND -->
 
                 <div>
 
@@ -1425,8 +1389,6 @@ body {
                     </p>
 
                 </div>
-
-                <!-- COMPANY -->
 
                 <div>
 
@@ -1460,8 +1422,6 @@ body {
 
                 </div>
 
-                <!-- SERVICES -->
-
                 <div>
 
                     <h4
@@ -1482,8 +1442,6 @@ body {
                     </div>
 
                 </div>
-
-                <!-- CONTACT -->
 
                 <div>
 
@@ -1529,8 +1487,6 @@ body {
         </div>
 
     </footer>
-
-    <!-- ACTIVE SCROLL NAVBAR -->
 
     <script>
 
